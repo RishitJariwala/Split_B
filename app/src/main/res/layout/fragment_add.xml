@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        tools:context=".Home_page">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/abrilfatface"
+            android:gravity="center"
+            android:text="Add Bill"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.2" />
+
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/custom_card_view_style"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:backgroundTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline5"
+            app:layout_constraintVertical_bias="1.0">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:drawableTint="@color/black"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/abrilfatface"
+                    android:gravity="center"
+                    android:text="ADD INFO"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:boxStrokeColor="@color/black"
+                    app:placeholderTextColor="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_DescriptionOfBill_ab"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:drawableStart="@drawable/baseline_edit_note_24"
+                        android:drawablePadding="8dp"
+                        android:drawableTint="@color/black"
+                        android:ems="10"
+                        android:hint="Description"
+                        android:inputType="text"
+                        android:padding="8dp"
+                        android:textColorHighlight="@color/black"
+                        android:textColorLink="@color/black"
+                        tools:ignore="HardcodedText,TextContrastCheck,VisualLintTextFieldSize" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:boxStrokeColor="@color/black"
+                    app:placeholderTextColor="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_TotalAmt_ab"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:drawableStart="@drawable/baseline_currency_rupee_24"
+                        android:drawablePadding="8dp"
+                        android:drawableTint="@color/black"
+                        android:ems="10"
+                        android:hint="Total Amount Of Bill"
+                        android:inputType="numberDecimal"
+                        android:padding="8dp"
+                        android:textColorHighlight="@color/black"
+                        android:textColorLink="@color/black"
+                        tools:ignore="HardcodedText,TextContrastCheck,VisualLintTextFieldSize" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+                <Spinner
+                        android:id="@+id/spacer_add"
+                        android:layout_width="250sp"
+                        android:layout_height="60dp"
+                        android:padding="8dp"
+                        android:layout_weight="1"
+                        app:boxStrokeColor="@color/black"
+                        app:placeholderTextColor="@color/black"
+                        />
+                    <Button
+                        android:id="@+id/btn_add_Ad"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="+"
+                        android:layout_weight="30"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:backgroundTint="@color/black"
+                        tools:ignore="HardcodedText,VisualLintButtonSize" />
+            </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:boxStrokeColor="@color/black"
+                    app:placeholderTextColor="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_Persons_ab"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:autofillHints="username"
+                        android:drawableStart="@drawable/user_name_asset"
+                        android:drawablePadding="8dp"
+                        android:drawableTint="@color/black"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:hint="Persons with Split"
+                        android:inputType="textPersonName"
+                        android:padding="8dp"
+                        android:textColorHighlight="@color/black"
+                        android:textColorHint="#757575"
+                        android:textColorLink="@color/black"
+                        tools:ignore="HardcodedText,TextContrastCheck,VisualLintTextFieldSize" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/Btn_PerPersonAmt_ab"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/white"
+                    android:text="Amount Per Person"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+                <Button
+                    android:id="@+id/btn_Split_sp"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="50dp"
+                    android:backgroundTint="@color/black"
+                    android:fontFamily="@font/abrilfatface"
+                    android:gravity="center"
+                    android:text="Split"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+
+            </LinearLayout>
+            </ScrollView>
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

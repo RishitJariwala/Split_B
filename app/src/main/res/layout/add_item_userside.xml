@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:gravity="center">
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:background="@drawable/edit_text_background"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/abrilfatface"
+            android:gravity="center"
+            android:text="ADD USER INFO"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:placeholderTextColor="@color/black"
+            app:boxStrokeColor="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_username_AI"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:drawableStart="@drawable/user_name_asset"
+                android:drawablePadding="8dp"
+                android:drawableTint="@color/black"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="User Name"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textColorHighlight="@color/black"
+                android:textColorLink="@color/black"
+                tools:ignore="HardcodedText,VisualLintTextFieldSize" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:placeholderTextColor="@color/black"
+            app:boxStrokeColor="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_Fname_AI"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:drawableStart="@drawable/user_name_asset"
+                android:drawablePadding="8dp"
+                android:drawableTint="@color/black"
+                android:ems="10"
+                android:hint="@string/first_name"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textColorHighlight="@color/black"
+                android:textColorHint="#546E7A"
+                android:textColorLink="@color/black"
+                tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:placeholderTextColor="@color/black"
+            app:boxStrokeColor="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_Lname_AI"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:drawableStart="@drawable/user_name_asset"
+                android:drawablePadding="8dp"
+                android:drawableTint="@color/black"
+                android:ems="10"
+                android:hint="@string/last_name"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textColorHighlight="@color/black"
+                android:textColorLink="@color/black"
+                tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:placeholderTextColor="@color/black"
+            app:boxStrokeColor="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_Contect_AI"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:drawableStart="@drawable/image_contect_number"
+                android:drawablePadding="8dp"
+                android:drawableTint="@color/black"
+                android:ems="10"
+                android:hint="@string/contect_number"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textColorHighlight="@color/black"
+                android:textColorLink="@color/black"
+                tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:placeholderTextColor="@color/black"
+            app:boxStrokeColor="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_email_AI"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:drawableStart="@drawable/baseline_email_24"
+                android:drawablePadding="8dp"
+                android:drawableTint="@color/black"
+                android:ems="10"
+                android:hint="@string/email"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textColorHighlight="@color/black"
+                android:textColorLink="@color/black"
+                tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+</LinearLayout>

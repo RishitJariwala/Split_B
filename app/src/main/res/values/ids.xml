@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btn_sign_in" type="id" />
+    <item name="tv_Login" type="id" />
+    <item name="btn_submit_fp" type="id" />
+    <item name="tv_Login_fp" type="id" />
+    <item name="et_contextnumber" type="id" />
+</resources>
